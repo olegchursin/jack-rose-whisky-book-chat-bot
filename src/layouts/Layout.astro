@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,39 +8,92 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Primary Meta Tags -->
+    <title>Jack Rose Dining Saloon Whisk(e)y Book Chat Bot</title>
+    <meta
+      name="title"
+      content="Jack Rose Dining Saloon Whisk(e)y Book Chat Bot"
+    />
+    <meta
+      name="description"
+      content="This is a chat bot that can answer questions about the whisk(e)y collection of Jack Rose Dining Saloon, a famous bar in Washington, DC."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://jack-rose-whisky-book-chat-bot.vercel.app/"
+    />
+    <meta
+      property="og:title"
+      content="Jack Rose Dining Saloon Whisk(e)y Book Chat Bot"
+    />
+    <meta
+      property="og:description"
+      content="This is a chat bot that can answer questions about the whisk(e)y collection of Jack Rose Dining Saloon, a famous bar in Washington, DC."
+    />
+    <meta
+      property="og:image"
+      content="https://ik.imagekit.io/olegchursin/whisky_xv72sQzUN.png?updatedAt=1704179384278"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://jack-rose-whisky-book-chat-bot.vercel.app/"
+    />
+    <meta
+      property="twitter:title"
+      content="Jack Rose Dining Saloon Whisk(e)y Book Chat Bot"
+    />
+    <meta
+      property="twitter:description"
+      content="This is a chat bot that can answer questions about the whisk(e)y collection of Jack Rose Dining Saloon, a famous bar in Washington, DC."
+    />
+    <meta
+      property="twitter:image"
+      content="https://ik.imagekit.io/olegchursin/whisky_xv72sQzUN.png?updatedAt=1704179384278"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(90deg, hsla(333, 100%, 53%, 1) 0%, hsla(33, 94%, 57%, 1) 100%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      90deg,
+      hsla(333, 100%, 53%, 1) 0%,
+      hsla(33, 94%, 57%, 1) 100%
+    );
+  }
+  html {
+    font-family: system-ui, sans-serif;
+    background: #13151a;
+    background-size: 224px;
+  }
+  code {
+    font-family:
+      Menlo,
+      Monaco,
+      Lucida Console,
+      Liberation Mono,
+      DejaVu Sans Mono,
+      Bitstream Vera Sans Mono,
+      Courier New,
+      monospace;
+  }
 </style>
