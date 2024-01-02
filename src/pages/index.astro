@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Jack Rose Dining Saloo Whisk(e)y Book.">
+  <main>
+    <h1>Jack Rose Dining Saloon Whisk(e)y Book</h1>
+
+    <p>
+      This is a free-tier chat-bot limited to <code>20 messages</code>. Each of
+      us has roughly 3 messages - use it wisely.
+    </p>
+    <p>Model: gpt-3.5-turbo</p>
+    <p>
+      Download <a
+        href="https://jackrosediningsaloon.com/wp-content/uploads/Whiskey-Book-12.28.23.pdf"
+        >PDF version</a
+      > used for training.
+    </p>
+
+    <div>
+      <iframe
+        src="https://www.chatbase.co/chatbot-iframe/tXwb8LFssCHELLyuXpsyJ"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"></iframe>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+</style>
